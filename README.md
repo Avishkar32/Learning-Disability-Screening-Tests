@@ -1,93 +1,100 @@
 # 🧠 Learning Disability Screening Suite
 
-A collection of four full-stack, gamified applications built with **Next.js**, **Node.js**, and **Machine Learning / GenAI**, designed to screen learning disabilities in children through interactive tests and intelligent analysis.
+A collection of four full-stack, **gamified** applications built using **Next.js**, **Node.js**, and **Machine Learning / GenAI**, crafted to screen learning disabilities in children through interactive, theme-based games and intelligent analysis.
 
-Each application is independently deployed and tackles a specific learning disorder, offering engaging gameplay and automated evaluation.
+Each application is independently deployed and targets a specific learning disorder using engaging gameplay mechanics and automated backend evaluation. All tools are **child-centric**, making the experience fun rather than stressful.
 
 ---
 
 ## 🚀 Projects at a Glance
 
-| Test Type       | Learning Disability | Tech Stack            | Model Type                        |
-|------------------|----------------------|-------------------------|------------------------------------|
-| 🎮 Game-Based    | ADHD                 | Next.js, Node.js, ML    | Random Forest                      |
-| 🧩 Pattern-Based | Dyslexia             | Next.js, Node.js, ML    | Hybrid (SVM + RF + Gradient Boost)|
-| ✍️ Drawing-Based | Dysgraphia           | Next.js, Node.js, ML    | CNN, Image Processing                      |
-| 🔢 Reasoning-Based| Dyscalculia          | Next.js, Node.js, GenAI | LLM-based Reasoning (Generative AI)|
-
----
-
-## 🅰️ ADHD Screener
-
-**Live Demo**: https://adhd-hosted-rwmp.vercel.app/
-**Code**:https://github.com/Avishkar32/ADHD_Hosted
-
-> **About ADHD**  
-> ADHD (Attention Deficit Hyperactivity Disorder) affects attention span, impulse control, and focus.  
-> This screener uses fast-paced, reaction-time-based games to identify inattention and impulsivity. Collected metrics are analyzed using a **Random Forest classifier**.
+| Game Theme     | Learning Disability | Test Style       | Tech Stack             | Model Type                          |
+|----------------|----------------------|------------------|------------------------|--------------------------------------|
+| 🌌 Space        | ADHD                 | Game-Based       | Next.js, Node.js, ML   | Random Forest                        |
+| 🌊 Ocean        | Dyslexia             | Pattern-Based    | Next.js, Node.js, ML   | Hybrid (SVM + RF + Gradient Boost)  |
+| 🌌 Space        | Dysgraphia           | Drawing-Based    | Next.js, Node.js, ML   | CNN + Image Processing               |
+| 🍭 Candy Land   | Dyscalculia          | Reasoning-Based  | Next.js, Node.js, GenAI| LLM-based Reasoning (Generative AI) |
 
 ---
 
 ## 🧠 Dyslexia Screener
 
-**Live Demo**: https://dsylexia-final.vercel.app/
-**Code**: https://github.com/Avishkar32/Dsylexia_final
+**Live Demo**: [dyslexia.vercel.app](https://dsylexia-final.vercel.app/)  
+**Code**: [GitHub Repo](https://github.com/Avishkar32/Dsylexia_final)
 
 > **About Dyslexia**  
-> Dyslexia impacts reading, spelling, and phonological processing.  
-> This tool presents letter confusion and word manipulation challenges. Evaluation is powered by a **hybrid ML model** (SVM + Random Forest + Gradient Boosting).
+> Dyslexia impacts reading accuracy, decoding, and spelling skills.  
+> The screener is set in an **oceanic world**, where kids solve letter and word-based puzzles. Their interactions are analyzed using a **hybrid ML model** combining SVM, Random Forest, and Gradient Boosting.
+
+---
+## 🔢 Dyscalculia Screener
+
+**Live Demo**: [dyscalculia.vercel.app](https://dyscalculia-screening-game.vercel.app/)  
+**Code**: [GitHub Repo](https://github.com/Avishkar32/Dyscalculia-Screening-Game)
+
+> **About Dyscalculia**  
+> Dyscalculia affects number recognition, math fluency, and spatial awareness.  
+> In a vibrant **candy land-themed adventure**, kids solve math puzzles and riddles. Their problem-solving patterns are evaluated by a **Generative AI model (LLM)** to detect difficulty with numerical reasoning.
 
 ---
 
 ## ✍️ Dysgraphia Screener
 
-**Live Demo**: https://dysgraphia-screening-test-eci3.vercel.app/
+**Live Demo**: [dysgraphia.vercel.app](https://dysgraphia-screening-test-eci3.vercel.app/)  
 **Code**: [Frontend](https://github.com/Avishkar32/Dysgraphia_Screening_Test) • [Backend](https://github.com/Avishkar32/DysgraphiaModel)
 
 > **About Dysgraphia**  
-> Dysgraphia impairs fine motor skills, handwriting, and written expression.  
-> This test involves freehand drawing and tracing on canvas. User strokes are processed and classified via a **Random Forest model** trained on writing behavior patterns.
+> Dysgraphia affects handwriting, fine motor control, and letter formation.  
+> This **space-themed screener** asks children to draw or trace shapes and letters. Their drawings are analyzed using **Convolutional Neural Networks (CNNs)** and **image processing techniques** to identify indicators of dysgraphia.
 
 ---
 
-## 🔢 Dyscalculia Screener
+## 🅰️ ADHD Screener
 
-**Live Demo**: https://dyscalculia-screening-game.vercel.app/
-**Code**: https://github.com/Avishkar32/Dyscalculia-Screening-Game
+**Live Demo**: [adhd.vercel.app](https://adhd-hosted-rwmp.vercel.app/)  
+**Code**: [GitHub Repo](https://github.com/Avishkar32/ADHD_Hosted)
 
-> **About Dyscalculia**  
-> Dyscalculia affects number sense, arithmetic processing, and spatial reasoning.  
-> This screener combines interactive math puzzles with **Generative AI (LLM)** to interpret open-ended math reasoning and detect signs of numerical cognition issues.
+> **About ADHD**  
+> ADHD (Attention Deficit Hyperactivity Disorder) affects focus, attention span, and impulse control.  
+> This screener places users in a **space-themed reaction game**, analyzing their in-game performance using a **Random Forest classifier** to detect signs of hyperactivity or inattention.
 
 ---
+
+
 
 ## ⚙️ Tech Stack
 
 - **Frontend**: Next.js, Tailwind CSS
 - **Backend**: Node.js, Express
-- **ML/AI**:
-  - ADHD: Random Forest
-  - Dyslexia: SVM + Random Forest + Gradient Boosting
-  - Dysgraphia: Random Forest
-  - Dyscalculia: Generative AI (LLMs)
-- **Deployment**: Vercel (Frontend) • Railway/Render (Backend)
+- **Models**:
+  - ADHD: Random Forest (Sklearn)
+  - Dyslexia: SVM + Random Forest + Gradient Boost (Hybrid)
+  - Dysgraphia: CNNs + Image Processing (OpenCV, TensorFlow/Keras)
+  - Dyscalculia: Generative AI (LLMs, OpenAI)
+- **Deployment**: Vercel (Frontend), Railway/Render (Backend)
 
 ---
 
 ## 📌 Why This Matters
 
-- Most LD tests rely on static questionnaires. This suite brings **interactivity, data, and automation** to early screening.
-- Designed to be used by educators, psychologists, and parents for **early detection**.
-- Combines **fun gameplay** with serious insights — bridging engagement and utility.
+Most existing screening tools are static, form-based, and resemble exams — which can cause anxiety and lead to inaccurate responses in children.  
+This suite takes a **play-first, diagnose-later** approach by blending:
+
+- 🎮 **Gamified experiences** designed for children  
+- 🤖 **ML/AI models** for accurate, data-driven screening  
+- 🧠 **Engaging themes** to make tests feel like fun adventures  
+- 📈 **Early detection** possibilities for schools, parents, and therapists
+
+> By turning tests into games, we lower psychological barriers and make early intervention more inclusive and accessible.
 
 ---
 
 ## ✍️ Author
 
 **Avishkar Ghodke**  
-MERN/Next.js Developer | ML & GenAI Enthusiast  
-[LinkedIn](https://www.linkedin.com/in/avishkar-ghodke-5556762b0/) • • [Email](avishkar.ghodke23@vit.edu)
+MERN & Next.js Developer | AI/ML + GenAI Enthusiast  
+[LinkedIn](https://www.linkedin.com/in/avishkar-ghodke-5556762b0/) • [Email](mailto:avishkar.ghodke23@vit.edu)
 
 ---
 
-> ⭐ Feel free to explore the live demos, review the codebases, and reach out for feedback or collaboration!
+> ⭐ Explore the live demos, check out the code, and feel free to reach out for feedback, collaboration, or discussion!
